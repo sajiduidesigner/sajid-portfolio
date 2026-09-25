@@ -1,0 +1,6 @@
+﻿Brand icons sourced from Simple Icons (CC0):
+https://github.com/simple-icons/simple-icons
+- react.svg
+- nextdotjs.svg
+- typescript.svg
+Rendered in monochrome to match the portfolio theme. Brand names and marks belong to their respective owners.

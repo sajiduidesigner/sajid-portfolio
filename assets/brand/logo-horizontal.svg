@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" role="img" aria-labelledby="title desc">
+  <title id="title">Sajid Khan personal brand logo</title>
+  <desc id="desc">SK monogram with the Sajid Khan wordmark and Senior Frontend Developer and UI/UX Designer descriptor.</desc>
+  <defs>
+    <linearGradient id="bg" x1="18" y1="12" x2="145" y2="150" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#171A24"/>
+      <stop offset="1" stop-color="#090B11"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="42" y1="35" x2="122" y2="126" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B5CF6"/>
+      <stop offset="0.52" stop-color="#6D7CFF"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="160" rx="28" fill="#0A0C12"/>
+  <g transform="translate(14 14) scale(.825)">
+    <rect x="4" y="4" width="152" height="152" rx="34" fill="url(#bg)" stroke="#282D3E" stroke-width="2"/>
+    <path d="M34 52C34 39 44 30 58 30H92" fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round"/>
+    <path d="M92 30H60C44 30 34 39 34 52C34 65 44 72 59 75L79 79C94 82 102 90 102 103C102 119 89 130 71 130H35" fill="none" stroke="url(#accent)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M105 34V126" fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round"/>
+    <path d="M106 82L131 56M106 82L134 114" fill="none" stroke="url(#accent)" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="175" y="76" fill="#F7F8FC" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800" letter-spacing="1.2">SAJID KHAN</text>
+  <rect x="176" y="91" width="64" height="3" rx="1.5" fill="url(#accent)"/>
+  <text x="175" y="121" fill="#A8AFC3" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="500" letter-spacing="1.1">FRONTEND ENGINEERING  •  UI/UX DESIGN</text>
+</svg>
