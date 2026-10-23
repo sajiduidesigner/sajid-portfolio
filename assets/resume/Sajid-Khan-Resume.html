@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sajid Khan — Senior Frontend Developer — ATS Resume</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 12mm 15mm 12mm 15mm;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 9.3pt;
+      line-height: 1.4;
+      color: #1e293b;
+      background: #ffffff;
+      -webkit-font-smoothing: antialiased;
+    }
+    a {
+      color: #0f766e;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* HEADER */
+    .header {
+      border-bottom: 2px solid #0f766e;
+      padding-bottom: 9px;
+      margin-bottom: 12px;
+    }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+    h1 {
+      font-size: 21pt;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      color: #0f172a;
+      text-transform: uppercase;
+    }
+    .headline {
+      font-size: 11.5pt;
+      font-weight: 700;
+      color: #0f766e;
+      letter-spacing: -0.01em;
+    }
+    .contact-bar {
+      font-size: 8.9pt;
+      color: #475569;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+    .contact-item {
+      white-space: nowrap;
+    }
+    .contact-sep {
+      color: #94a3b8;
+      font-weight: 400;
+      padding: 0 4px;
+    }
+
+    /* SECTIONS */
+    section {
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-size: 10.2pt;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #0f172a;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 3.5px;
+      margin-bottom: 7.5px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .section-title::before {
+      content: "";
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      background-color: #0f766e;
+      border-radius: 1px;
+    }
+
+    .summary-text {
+      font-size: 9.2pt;
+      line-height: 1.45;
+      color: #334155;
+      text-align: justify;
+    }
+
+    /* SKILLS */
+    .skills-table {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .skill-row {
+      font-size: 8.9pt;
+      line-height: 1.38;
+      color: #334155;
+      display: grid;
+      grid-template-columns: 175px 1fr;
+      align-items: baseline;
+    }
+    .skill-label {
+      color: #0f172a;
+      font-weight: 700;
+    }
+    .skill-values {
+      color: #334155;
+    }
+
+    /* EXPERIENCE */
+    .exp-item {
+      margin-bottom: 10px;
+    }
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+    .exp-role {
+      font-size: 9.8pt;
+      font-weight: 750;
+      color: #0f172a;
+    }
+    .exp-company {
+      font-weight: 700;
+      color: #0f766e;
+    }
+    .exp-meta {
+      font-size: 8.7pt;
+      font-weight: 600;
+      color: #64748b;
+      white-space: nowrap;
+    }
+    .exp-scope {
+      font-size: 8.9pt;
+      font-style: italic;
+      color: #475569;
+      margin-bottom: 4px;
+    }
+
+    ul.bullet-list {
+      list-style-type: disc;
+      margin-left: 17px;
+      margin-top: 3px;
+    }
+    ul.bullet-list li {
+      font-size: 9pt;
+      line-height: 1.39;
+      color: #334155;
+      margin-bottom: 4px;
+      padding-left: 2px;
+    }
+    ul.bullet-list li strong {
+      color: #0f172a;
+      font-weight: 650;
+    }
+
+    /* PROJECTS */
+    .projects-container {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+    .project-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-left: 3.5px solid #0f766e;
+      padding: 7px 11px;
+      border-radius: 4px;
+    }
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2.5px;
+    }
+    .project-title {
+      font-size: 9.5pt;
+      font-weight: 750;
+      color: #0f172a;
+    }
+    .project-stack {
+      font-size: 8.3pt;
+      font-weight: 650;
+      color: #0f766e;
+    }
+    .project-desc {
+      font-size: 8.8pt;
+      color: #334155;
+      line-height: 1.36;
+    }
+
+    /* TWO COLUMNS */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .col-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 4px;
+      padding: 8px 11px;
+    }
+    .col-box-title {
+      font-size: 9.1pt;
+      font-weight: 750;
+      color: #0f172a;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    /* PAGE BREAK */
+    .page-break {
+      page-break-before: always;
+      break-before: page;
+    }
+    .page-header-continuation {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 1.5px solid #0f766e;
+      padding-bottom: 6px;
+      margin-bottom: 12px;
+      font-size: 8.8pt;
+      color: #64748b;
+      font-weight: 600;
+    }
+    .page-header-continuation strong {
+      color: #0f172a;
+      font-size: 9.5pt;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== PAGE 1 ==================== -->
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-top">
+      <h1>SAJID KHAN</h1>
+      <span class="headline">Senior Frontend Developer &amp; UI/UX Architect</span>
+    </div>
+    <div class="contact-bar">
+      <span class="contact-item">India (Open to Remote &amp; Hybrid Roles)</span>
+      <span class="contact-sep">|</span>
+      <span class="contact-item"><a href="mailto:sajid.digt@gmail.com">sajid.digt@gmail.com</a></span>
+      <span class="contact-sep">|</span>
+      <span class="contact-item"><a href="https://linkedin.com/in/mohdsajidkhan" target="_blank">linkedin.com/in/mohdsajidkhan</a></span>
+      <span class="contact-sep">|</span>
+      <span class="contact-item"><a href="https://sajidkhan.dev" target="_blank">Portfolio: sajidkhan.dev</a></span>
+    </div>
+  </header>
+
+  <!-- PROFESSIONAL SUMMARY -->
+  <section>
+    <h2 class="section-title">Professional Summary</h2>
+    <p class="summary-text">
+      <strong>Senior Frontend Developer with 15+ years of experience</strong> architecting resilient, accessible, and high-performance web applications using modern <strong>React 19/18, Next.js (App Router), and TypeScript</strong>. Combines deep visual design craftsmanship with modern <strong>AI-augmented engineering workflows</strong> (Cursor, GitHub Copilot, LLM prompt orchestration for component scaffolding, automated test generation, and Zod schema contracts) to accelerate delivery without sacrificing architectural rigor. Proven track record leading a 12-member design team at Magicbricks, spearheading SEO-first static publishing, interactive media applications, scalable design systems, and internal workflow automation engines.
+    </p>
+  </section>
+
+  <!-- TECHNICAL SKILLS -->
+  <section>
+    <h2 class="section-title">Technical Skills &amp; Core Competencies</h2>
+    <div class="skills-table">
+      <div class="skill-row">
+        <span class="skill-label">Frontend &amp; Frameworks:</span>
+        <span class="skill-values">React 19 / 18, Next.js (App Router, SSG, SSR, ISR), TypeScript, JavaScript (ES6+ / ESNext), HTML5 Semantic Architecture, CSS3 / Modern CSS</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">State &amp; Data Management:</span>
+        <span class="skill-values">TanStack Query (React Query), Zustand, Redux Toolkit, React Context API, RESTful APIs, GraphQL, Schema-Driven UI (Zod, JSON Schema)</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Architecture &amp; Performance:</span>
+        <span class="skill-values">Core Web Vitals (LCP, INP, CLS), Static Site Generation, Bundle Splitting &amp; Tree Shaking, WCAG 2.2 &amp; WAI-ARIA Accessibility, Lighthouse Auditing</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Design Systems &amp; Styling:</span>
+        <span class="skill-values">Design Token Pipelines, Compound Components, Tailwind CSS, CSS Modules, Responsive &amp; Fluid Layouts, Storybook, Figma-to-Code Workflows</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Media APIs &amp; Tooling:</span>
+        <span class="skill-values">Web Audio API, Wavesurfer.js, HLS.js Video Streaming, Git, GitHub, Turbopack, Vite, Webpack, Chrome DevTools, GA4 Analytics Instrumentation</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">AI-Augmented Engineering:</span>
+        <span class="skill-values">AI-Assisted UI Scaffolding, LLM Prompt Engineering for UI &amp; Testing, Cursor, GitHub Copilot, Automated Test &amp; Fixture Generation</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFESSIONAL EXPERIENCE - MAGICBRICKS -->
+  <section>
+    <h2 class="section-title">Professional Experience</h2>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <span class="exp-role">Senior Frontend Developer &amp; UI/UX Designer <span class="exp-company">| Magicbricks Realty Services Ltd.</span></span>
+        <span class="exp-meta">Aug 2010 — Present | India</span>
+      </div>
+      <div class="exp-scope">Direct frontend ownership for customer-facing real-estate platforms, content ecosystems, design systems, and internal productivity tooling; managed and mentored a 12-member design team.</div>
+      <ul class="bullet-list">
+        <li><strong>Interactive Training Platform (Magicbricks LMS):</strong> Architected an enterprise learning web application combining custom HLS.js video playback with dynamic learner watermarks, anti-skipping playback controls, browser voice recording via Web Audio API, and audio visualization with Wavesurfer.js across role-based states (Learner, Manager, Admin).</li>
+        <li><strong>High-Performance Static Publishing (Research Insights):</strong> Migrated a heavy client-rendered report repository into a high-speed static publishing architecture using Python/Jinja2 static page generation, structured JSON data contracts, dynamic client-side filtering (City, Quarter, Year), and automated SEO metadata (canonical tags, OpenGraph), achieving sub-second load times.</li>
+        <li><strong>Internal Production Automation (Property Banner Engine):</strong> Designed and built an internal React dynamic canvas &amp; DOM graphic generation tool, automating bulk marketing creative production from property data feeds and eliminating repetitive creative design bottlenecks.</li>
+        <li><strong>High-Conversion Lead Platforms (MagicInteriors):</strong> Architected modular landing page systems, multi-step customer consultation journeys, dynamic project galleries, and client-side form validation, significantly improving lead qualification rates across 40+ premier builder projects.</li>
+        <li><strong>Platform-Wide Architecture &amp; Scalability:</strong> Standardized navigation patterns and responsive component layouts across 1,000+ real estate microsites, preserving legacy data compatibility while drastically modernizing UX consistency and mobile responsiveness.</li>
+        <li><strong>Design &amp; Engineering Leadership:</strong> Managed and mentored a 12-member design team, establishing interface design tokens, conducting cross-functional code and UI reviews, and aligning Product, Engineering, and Business requirements into dependable delivery schedules.</li>
+        <li><strong>Performance &amp; Accessibility Governance:</strong> Enforced strict performance budgets and Core Web Vitals optimization (LCP &lt; 2s, zero layout shifts), implemented GA4 analytics instrumentation, and ensured WCAG 2.2 accessibility compliance across production surfaces.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ==================== PAGE 2 ==================== -->
+  <div class="page-break"></div>
+
+  <div class="page-header-continuation">
+    <strong>SAJID KHAN — Senior Frontend Developer &amp; UI/UX Architect</strong>
+    <span>sajid.digt@gmail.com | linkedin.com/in/mohdsajidkhan | Page 2</span>
+  </div>
+
+  <!-- PROFESSIONAL EXPERIENCE CONTINUED -->
+  <section>
+    <h2 class="section-title">Professional Experience (Continued)</h2>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <span class="exp-role">Web Designer &amp; Frontend Lead <span class="exp-company">| Grange Management Pvt. Ltd.</span></span>
+        <span class="exp-meta">Apr 2009 — Aug 2010 | Delhi, India</span>
+      </div>
+      <div class="exp-scope">Led web design and frontend development for varied client web applications, bridging visual identity with standards-compliant code.</div>
+      <ul class="bullet-list">
+        <li>Led and coordinated a multi-disciplinary team of web designers and frontend developers across simultaneous client projects, ensuring high visual and technical quality.</li>
+        <li>Built user-friendly, responsive web interfaces using semantic HTML, modular CSS, and JavaScript, strictly adhering to WCAG 2.0 accessibility guidelines.</li>
+        <li>Created custom vector assets, iconography, and responsive design systems using Adobe Photoshop and Illustrator.</li>
+        <li>Collaborated with engineering teams to optimize mobile usability and responsive cross-browser compatibility.</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <span class="exp-role">Web Designer &amp; Developer <span class="exp-company">| Digisoft.in</span></span>
+        <span class="exp-meta">Sep 2007 — Apr 2009 | Delhi, India</span>
+      </div>
+      <div class="exp-scope">Delivered end-to-end custom responsive websites for enterprise and retail clients from concept to live deployment.</div>
+      <ul class="bullet-list">
+        <li>Designed and developed tailored websites directly collaborating with clients to translate business requirements into approved interface prototypes.</li>
+        <li>Converted approved multi-screen design concepts into fully functional, responsive, cross-browser compatible websites optimized for performance and reliability.</li>
+        <li>Conducted cross-browser manual and automated testing, debugging layout quirks, and optimizing asset sizes for fast loading across diverse devices.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- KEY ENGINEERING & PRODUCT PROJECTS -->
+  <section>
+    <h2 class="section-title">Selected Engineering Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-title">BrokerOS Landing Page Studio</span>
+          <span class="project-stack">Next.js · React · TypeScript · Zod · Tailwind CSS</span>
+        </div>
+        <p class="project-desc">Engineered a schema-driven landing page builder with 12+ reusable UI modules, real-time responsive multi-device preview rendering, and token-based theme customization for real estate marketing operations.</p>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-title">Property Search Experience Architecture</span>
+          <span class="project-stack">Next.js · React · TypeScript · TanStack Query · Zustand</span>
+        </div>
+        <p class="project-desc">Architected a scalable real estate search engine prototype featuring bidirectional URL-driven filter synchronization, cached server-state management, responsive filter drawers, and skeleton loading states.</p>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-title">Real Estate Frontend Design System</span>
+          <span class="project-stack">React · TypeScript · Storybook · CSS Variables · Tailwind CSS</span>
+        </div>
+        <p class="project-desc">Constructed a typed 20+ component library with design token pipelines, accessible modal/tab/form primitives, and full keyboard navigation compliance (WAI-ARIA).</p>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-title">Smart Broker Card &amp; Digital Identity Platform</span>
+          <span class="project-stack">React · REST APIs · Responsive Architecture · QR Integration</span>
+        </div>
+        <p class="project-desc">Designed a mobile-first digital broker profile and inventory discovery application enabling instant QR sharing and lightweight CRM-connected lead capture with zero app installation required.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEADERSHIP, METHODOLOGIES & CONTINUOUS LEARNING -->
+  <section>
+    <h2 class="section-title">Leadership, Methodologies &amp; Education</h2>
+    <div class="two-col">
+      <div class="col-box">
+        <div class="col-box-title">Leadership &amp; Delivery</div>
+        <ul class="bullet-list">
+          <li><strong>Team Mentorship:</strong> 15+ years guiding designers &amp; developers; directly managed 12-member design team.</li>
+          <li><strong>Design-to-Code Ownership:</strong> Seamless transition from Figma concepts to type-safe React implementations.</li>
+          <li><strong>Agile &amp; Cross-Functional:</strong> Daily collaboration with Product, Engineering, Marketing, and Sales teams.</li>
+        </ul>
+      </div>
+      <div class="col-box">
+        <div class="col-box-title">Engineering Practices &amp; Learning</div>
+        <ul class="bullet-list">
+          <li><strong>AI Velocity:</strong> Pragmatic integration of LLMs for scaffolding, unit testing, and schema validation.</li>
+          <li><strong>Quality &amp; Performance:</strong> Ruthless focus on Core Web Vitals, semantic markup, and WCAG accessibility.</li>
+          <li><strong>Continuous Education:</strong> Advanced React &amp; Next.js Architecture, TypeScript in Enterprise, Design Systems.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

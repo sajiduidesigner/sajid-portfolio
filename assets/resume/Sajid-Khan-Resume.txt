@@ -1,0 +1,68 @@
+SAJID KHAN
+Senior Frontend Developer & UI/UX Architect
+India (Open to Remote & Hybrid Roles) | sajid.digt@gmail.com | linkedin.com/in/mohdsajidkhan | Portfolio: sajidkhan.dev
+
+================================================================================
+PROFESSIONAL SUMMARY
+================================================================================
+Senior Frontend Developer with 15+ years of experience architecting resilient, accessible, and high-performance web applications using modern React 19/18, Next.js (App Router), and TypeScript. Combines deep visual design craftsmanship with modern AI-augmented engineering workflows (Cursor, GitHub Copilot, LLM prompt orchestration for component scaffolding, automated test generation, and Zod schema contracts) to accelerate delivery without sacrificing architectural rigor. Proven track record leading a 12-member design team at Magicbricks, spearheading SEO-first static publishing, interactive media applications, scalable design systems, and internal workflow automation engines.
+
+================================================================================
+TECHNICAL SKILLS & CORE COMPETENCIES
+================================================================================
+- Frontend & Frameworks: React 19 / 18, Next.js (App Router, SSG, SSR, ISR), TypeScript, JavaScript (ES6+ / ESNext), HTML5 Semantic Architecture, CSS3 / Modern CSS
+- State & Data Management: TanStack Query (React Query), Zustand, Redux Toolkit, React Context API, RESTful APIs, GraphQL, Schema-Driven UI (Zod, JSON Schema)
+- Architecture & Performance: Core Web Vitals (LCP, INP, CLS), Static Site Generation, Bundle Splitting & Tree Shaking, WCAG 2.2 & WAI-ARIA Accessibility, Lighthouse Auditing
+- Design Systems & Styling: Design Token Pipelines, Compound Components, Tailwind CSS, CSS Modules, Responsive & Fluid Layouts, Storybook, Figma-to-Code Workflows
+- Media APIs & Tooling: Web Audio API, Wavesurfer.js, HLS.js Video Streaming, Git, GitHub, Turbopack, Vite, Webpack, Chrome DevTools, GA4 Analytics Instrumentation
+- AI-Augmented Engineering: AI-Assisted UI Scaffolding, LLM Prompt Engineering for UI & Testing, Cursor, GitHub Copilot, Automated Test & Fixture Generation
+
+================================================================================
+PROFESSIONAL EXPERIENCE
+================================================================================
+Senior Frontend Developer & UI/UX Designer | Magicbricks Realty Services Ltd.
+Aug 2010 — Present | India
+Direct frontend ownership for customer-facing real-estate platforms, content ecosystems, design systems, and internal productivity tooling; managed and mentored a 12-member design team.
+- Interactive Training Platform (Magicbricks LMS): Architected an enterprise learning web application combining custom HLS.js video playback with dynamic learner watermarks, anti-skipping playback controls, browser voice recording via Web Audio API, and audio visualization with Wavesurfer.js across role-based states (Learner, Manager, Admin).
+- High-Performance Static Publishing (Research Insights): Migrated a heavy client-rendered report repository into a high-speed static publishing architecture using Python/Jinja2 static page generation, structured JSON data contracts, dynamic client-side filtering (City, Quarter, Year), and automated SEO metadata (canonical tags, OpenGraph), achieving sub-second load times.
+- Internal Production Automation (Property Banner Engine): Designed and built an internal React dynamic canvas & DOM graphic generation tool, automating bulk marketing creative production from property data feeds and eliminating repetitive creative design bottlenecks.
+- High-Conversion Lead Platforms (MagicInteriors): Architected modular landing page systems, multi-step customer consultation journeys, dynamic project galleries, and client-side form validation, significantly improving lead qualification rates across 40+ premier builder projects.
+- Platform-Wide Architecture & Scalability: Standardized navigation patterns and responsive component layouts across 1,000+ real estate microsites, preserving legacy data compatibility while drastically modernizing UX consistency and mobile responsiveness.
+- Design & Engineering Leadership: Managed and mentored a 12-member design team, establishing interface design tokens, conducting cross-functional code and UI reviews, and aligning Product, Engineering, and Business requirements into dependable delivery schedules.
+- Performance & Accessibility Governance: Enforced strict performance budgets and Core Web Vitals optimization (LCP < 2s, zero layout shifts), implemented GA4 analytics instrumentation, and ensured WCAG 2.2 accessibility compliance across production surfaces.
+
+Web Designer & Frontend Lead | Grange Management Pvt. Ltd.
+Apr 2009 — Aug 2010 | Delhi, India
+Led web design and frontend development for varied client web applications, bridging visual identity with standards-compliant code.
+- Led and coordinated a multi-disciplinary team of web designers and frontend developers across simultaneous client projects, ensuring high visual and technical quality.
+- Built user-friendly, responsive web interfaces using semantic HTML, modular CSS, and JavaScript, strictly adhering to WCAG 2.0 accessibility guidelines.
+- Created custom vector assets, iconography, and responsive design systems using Adobe Photoshop and Illustrator.
+- Collaborated with engineering teams to optimize mobile usability and responsive cross-browser compatibility.
+
+Web Designer & Developer | Digisoft.in
+Sep 2007 — Apr 2009 | Delhi, India
+Delivered end-to-end custom responsive websites for enterprise and retail clients from concept to live deployment.
+- Designed and developed tailored websites directly collaborating with clients to translate business requirements into approved interface prototypes.
+- Converted approved multi-screen design concepts into fully functional, responsive, cross-browser compatible websites optimized for performance and reliability.
+- Conducted cross-browser manual and automated testing, debugging layout quirks, and optimizing asset sizes for fast loading across diverse devices.
+
+================================================================================
+SELECTED ENGINEERING PROJECTS
+================================================================================
+- BrokerOS Landing Page Studio (Next.js · React · TypeScript · Zod · Tailwind CSS): Engineered a schema-driven landing page builder with 12+ reusable UI modules, real-time responsive multi-device preview rendering, and token-based theme customization for real estate marketing operations.
+- Property Search Experience Architecture (Next.js · React · TypeScript · TanStack Query · Zustand): Architected a scalable real estate search engine prototype featuring bidirectional URL-driven filter synchronization, cached server-state management, responsive filter drawers, and skeleton loading states.
+- Real Estate Frontend Design System (React · TypeScript · Storybook · CSS Variables · Tailwind CSS): Constructed a typed 20+ component library with design token pipelines, accessible modal/tab/form primitives, and full keyboard navigation compliance (WAI-ARIA).
+- Smart Broker Card & Digital Identity Platform (React · REST APIs · Responsive Architecture · QR Integration): Designed a mobile-first digital broker profile and inventory discovery application enabling instant QR sharing and lightweight CRM-connected lead capture with zero app installation required.
+
+================================================================================
+LEADERSHIP, METHODOLOGIES & EDUCATION
+================================================================================
+Leadership & Delivery:
+- Team Mentorship: 15+ years guiding designers & developers; directly managed 12-member design team.
+- Design-to-Code Ownership: Seamless transition from Figma concepts to type-safe React implementations.
+- Agile & Cross-Functional: Daily collaboration with Product, Engineering, Marketing, and Sales teams.
+
+Engineering Practices & Learning:
+- AI Velocity: Pragmatic integration of LLMs for scaffolding, unit testing, and schema validation.
+- Quality & Performance: Ruthless focus on Core Web Vitals, semantic markup, and WCAG accessibility.
+- Continuous Education: Advanced React & Next.js Architecture, TypeScript in Enterprise, Design Systems.
